@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
+		<!-- Definimos el tipo de documento como HTML5 y establecemos el idioma del contenido a español -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<!-- Título que aparecerá en la pestaña del navegador -->
 		<title>Bicicletas Bogotá</title>
+		<!-- Vinculamos la hoja de estilos externa llamada "styles.css" -->
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
 		<header>
+			<!-- Contenedor principal del encabezado -->
 			<div class="container-hero">
 				<div class="container hero">
+					<!-- Soporte al cliente con icono y número de contacto -->
 					<div class="customer-support">
 						<i class="fa-solid fa-headset"></i>
 						<div class="content-customer-support">
@@ -22,11 +27,13 @@
 						</div>
 					</div>
 
+					<!-- Logotipo de la tienda con ícono de bicicleta -->
 					<div class="container-logo">
 						<i class="fa-solid fa-bicycle"></i>
 						<h1 class="logo"><a href="/">Bicicletas Bogotá</a></h1>
 					</div>
 
+					<!-- Sección de usuario con íconos de perfil y carrito de compras -->
 					<div class="container-user">
 						<i class="fa-solid fa-user"></i>
 						<i class="fa-solid fa-basket-shopping"></i>
@@ -38,10 +45,12 @@
 				</div>
 			</div>
 
+			<!-- Barra de navegación principal -->
 			<div class="container-navbar">
 				<nav class="navbar container">
 					<i class="fa-solid fa-bars"></i>
 					<ul class="menu">
+						<!-- Menú desplegable de productos -->
 						<li>
 							<a href="#">Productos</a>
 							<ul class="dropdown">
@@ -53,10 +62,12 @@
 								<li><a href="#">Todas las Categorías</a></li>
 							</ul>
 						</li>
+						<!-- Enlaces de otras secciones de la página -->
 						<li><a href="#">Arma tu Bici</a></li>
 						<li><a href="#">¿Quienes Somos?</a></li>
 					</ul>
 
+					<!-- Barra de búsqueda para buscar productos -->
 					<form class="search-form">
 						<input type="search" placeholder="Buscar bicicletas o accesorios..." />
 						<button class="btn-search">
@@ -67,6 +78,7 @@
 			</div>
 		</header>
 
+		<!-- Sección de banner con oferta principal -->
 		<section class="banner">
 			<div class="content-banner">
 				<p>La Mejor Calidad</p>
@@ -76,6 +88,7 @@
 		</section>
 
 		<main class="main-content">
+			<!-- Sección de características principales de la tienda -->
 			<section class="container container-features">
 				<div class="card-feature">
 					<i class="fa-solid fa-plane-up"></i>
@@ -107,6 +120,7 @@
 				</div>
 			</section>
 
+			<!-- Sección de mejores categorías -->
 			<section class="container top-categories">
 				<h1 class="heading-1">Mejores Categorías</h1>
 				<div class="container-categories">
@@ -125,21 +139,26 @@
 				</div>
 			</section>
 
+			<!-- Sección de productos destacados -->
 			<section class="container top-products">
 				<h1 class="heading-1">Productos Destacados</h1>
 
+				<!-- Filtros de productos destacados, recientes y mejores vendidos -->
 				<div class="container-options">
 					<span class="active">Destacados</span>
 					<span>Más recientes</span>
 					<span>Mejores Vendidos</span>
 				</div>
 
+				<!-- Tarjetas de productos -->
 				<div class="container-products">
 					<!-- Producto 1 -->
 					<div class="card-product">
 						<div class="container-img">
 							<img src="images/Montana1Naranja.jpg" alt="Bicicleta de Montaña Naran-Negro" />
+							<!-- Indicador de descuento del producto -->
 							<span class="discount">-15%</span>
+							<!-- Grupo de botones para ver detalles, agregar a favoritos o comparar -->
 							<div class="button-group">
 								<span>
 									<i class="fa-regular fa-eye"></i>
@@ -153,6 +172,7 @@
 							</div>
 						</div>
 						<div class="content-card-product">
+							<!-- Calificación del producto con estrellas -->
 							<div class="stars">
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
@@ -161,6 +181,7 @@
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Bicicleta de Montaña</h3>
+							<!-- Botón para agregar al carrito -->
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
@@ -171,7 +192,9 @@
 					<div class="card-product">
 						<div class="container-img">
 							<img src="images/Ruta1Verde.jpg" alt="Bicicleta Urbana" />
+							<!-- Indicador de descuento del producto -->
 							<span class="discount">-10%</span>
+							<!-- Grupo de botones para ver detalles, agregar a favoritos o comparar -->
 							<div class="button-group">
 								<span>
 									<i class="fa-regular fa-eye"></i>
@@ -185,6 +208,7 @@
 							</div>
 						</div>
 						<div class="content-card-product">
+							<!-- Calificación del producto con estrellas -->
 							<div class="stars">
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
@@ -193,76 +217,54 @@
 								<i class="fa-regular fa-star"></i>
 							</div>
 							<h3>Bicicleta Urbana</h3>
+							<!-- Botón para agregar al carrito -->
 							<span class="add-cart">
 								<i class="fa-solid fa-basket-shopping"></i>
 							</span>
-							<p class="price">$1.215.000 <span>$1.350.000</span></p>
-						</div>
-					</div>
-					<!-- Producto 3 -->
-					<div class="card-product">
-						<div class="container-img">
-							<img src="images/Casco1Azul.jpg" alt="Casco de Protección" />
-							<div class="button-group">
-								<span>
-									<i class="fa-regular fa-eye"></i>
-								</span>
-								<span>
-									<i class="fa-regular fa-heart"></i>
-								</span>
-								<span>
-									<i class="fa-solid fa-code-compare"></i>
-								</span>
-							</div>
-						</div>
-						<div class="content-card-product">
-							<div class="stars">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-regular fa-star"></i>
-							</div>
-							<h3>Casco de Protección</h3>
-							<span class="add-cart">
-								<i class="fa-solid fa-basket-shopping"></i>
-							</span>
-							<p class="price">$250.000</p>
+							<p class="price">$1.800.000 <span>$2.000.000</span></p>
 						</div>
 					</div>
 				</div>
 			</section>
-
-			<section class="gallery">
-				<img src="images/gallery1.jpg" alt="Imagen Galería 1" class="gallery-img-1" />
-				<img src="images/gallery2.jpg" alt="Imagen Galería 2" class="gallery-img-2" />
-				<img src="images/gallery3.jpg" alt="Imagen Galería 3" class="gallery-img-3" />
-				<img src="images/gallery4.jpg" alt="Imagen Galería 4" class="gallery-img-4" />
-				<img src="images/gallery5.jpg" alt="Imagen Galería 5" class="gallery-img-5" />
-			</section>
 		</main>
 
+		<!-- Pie de página -->
 		<footer class="footer">
-			<div class="container container-footer">
-				<div class="menu-footer">
-					<div class="contact-info">
-						<p class="title-footer">Información de Contacto</p>
-						<ul>
-							<li>Dirección: CCTitán Plaza - Local 698 - Piso 6, Bogotá, Colombia</li>
-							<li>Teléfono: +57 3103-696-436</li>
-							<li>Email: contacto@bicicletasbogota.com</li>
-						</ul>
-						<div class="social-icons">
-							<span class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
-							<span class="twitter"><i class="fa-brands fa-twitter"></i></span>
-							<span class="youtube"><i class="fa-brands fa-youtube"></i></span>
-							<span class="instagram"><i class="fa-brands fa-instagram"></i></span>
-						</div>
-					</div>
+			<div class="container">
+				<!-- Información de contacto -->
+				<div class="footer-col">
+					<h3>Contacto</h3>
+					<p>Av. 100 con Calle 19 Bogotá - Colombia</p>
+					<p>Tel: +57 3103-696-436</p>
+					<p>Email: info@bicicletasbogota.com</p>
+				</div>
 
+				<!-- Enlaces rápidos -->
+				<div class="footer-col">
+					<h3>Enlaces útiles</h3>
+					<ul>
+						<li><a href="#">Acerca de</a></li>
+						<li><a href="#">Política de privacidad</a></li>
+						<li><a href="#">Términos de uso</a></li>
+					</ul>
+				</div>
+
+				<!-- Redes sociales -->
+				<div class="footer-col">
+					<h3>Síguenos</h3>
+					<ul class="social-links">
+						<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
 					<div class="information">
+						<!-- Título de la sección relacionada con la cuenta del usuario -->
 						<p class="title-footer">Información</p>
 						<ul>
+							<!-- Enlaces a las funcionalidades relacionadas con la cuenta del usuario -->
 							<li><a href="#">Acerca de Nosotros</a></li>
 							<li><a href="#">Políticas de Envío</a></li>
 							<li><a href="#">Términos y Condiciones</a></li>
@@ -271,8 +273,10 @@
 					</div>
 
 					<div class="my-account">
+						<!-- Título de la sección relacionada con la cuenta del usuario -->
 						<p class="title-footer">Mi Cuenta</p>
 						<ul>
+							<!-- Enlaces a las funcionalidades relacionadas con la cuenta del usuario -->
 							<li><a href="#">Historial de Pedidos</a></li>
 							<li><a href="#">Lista de Deseos</a></li>
 							<li><a href="#">Mi Cuenta</a></li>
@@ -280,22 +284,25 @@
 					</div>
 
 					<div class="newsletter">
+						<!-- Título de la sección de suscripción al boletín -->
 						<p class="title-footer">Suscríbete</p>
 						<div class="content">
 							<p>Recibe nuestras últimas ofertas y noticias.</p>
+							<!-- Campo de entrada para que los usuarios ingresen su correo electrónico -->
 							<input type="email" placeholder="Ingresa tu correo...">
+							<!-- Botón para enviar la suscripción -->
 							<button>Suscribirse</button>
 						</div>
 					</div>
 				</div>
-
+				<!-- Sección de derechos de autor y métodos de pago -->
 				<div class="copyright">
 					<p>© 2024 Bicicletas Bogotá. Todos los derechos reservados.</p>
 					<img src="images/payment.png" alt="Métodos de Pago">
 				</div>
 			</div>
 		</footer>
-
+		<!-- Enlace al script de FontAwesome para usar iconos en la página -->
 		<script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
 	</body>
 </html>
