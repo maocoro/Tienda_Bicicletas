@@ -29,5 +29,5 @@ El diseño del sistema incluye:
 
 La implementación de esta plataforma busca optimizar la experiencia del cliente, mejorando la interacción con los productos, proporcionando acceso fácil a información relevante y ofreciendo una interfaz clara y funcional para los administradores del sistema.
 
-##Clonar el repositorio
+## Clonar el repositorio
 - Clonar el repositorio (git clone https://github.com/maocoro/Tienda_Bicicletas.git) 
