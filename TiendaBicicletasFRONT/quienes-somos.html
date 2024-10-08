@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quiénes Somos? - Bicicletas Bogotá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <!-- Reutilizar el menú de navegación -->
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            <ul class="menu" id="menu">
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="dropdown">
+                        <li><a href="bicicletas.html">Bicicletas</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="repuestos.html">Repuestos</a></li>
+                        <li><a href="indumentaria.html">Indumentaria</a></li>
+                        <li><a href="herramientas.html">Herramientas</a></li>
+                        <li><a href="todas-categorias.html">Todas las Categorías</a></li>
+                    </ul>
+                </li>
+                <li><a href="arma-tu-bici.html">Arma tu Bici</a></li>
+                <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <div class="container">
+                <h1 class="heading-1">¿Quiénes Somos?</h1>
+                <p class="intro-text">
+                    En Bicicletas Bogotá, somos apasionados por el ciclismo y comprometidos a ofrecer las mejores bicicletas y accesorios de alta calidad para todos los tipos de ciclistas. Nuestra misión es promover el ciclismo como un estilo de vida saludable y sostenible, mientras brindamos un servicio excepcional a nuestros clientes.
+                </p>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/equipoTrabajo.jpg" alt="Nuestro equipo">
+                    </div>
+                    <div class="about-text">
+                        <h2>Nuestra Historia</h2>
+                        <p>
+                            Fundada en 2020, Bicicletas Bogotá comenzó como un pequeño proyecto impulsado por ciclistas locales que querían ofrecer bicicletas accesibles y de alta calidad a la comunidad. Hoy en día, hemos crecido y nos enorgullece ser una tienda reconocida en Bogotá y toda Colombia.
+                        </p>
+                        <h2>Nuestros Valores</h2>
+                        <ul>
+                            <li><strong>Calidad:</strong> Trabajamos solo con los mejores fabricantes para garantizar la durabilidad y seguridad de nuestras bicicletas.</li>
+                            <li><strong>Innovación:</strong> Nos mantenemos a la vanguardia en tecnología de bicicletas para ofrecerte lo último en el mercado.</li>
+                            <li><strong>Pasión:</strong> Nuestro equipo está formado por ciclistas apasionados que entienden tus necesidades.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-team">
+            <div class="container">
+                <h2 class="heading-2">Nuestro Equipo</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="images/MalcomTraje.jpg" alt="Miembro del equipo">
+                        <h3>Malcom Paz</h3>
+                        <p>Fundador & CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/Alejandrotraje.jpg" alt="Miembro del equipo">
+                        <h3>Alejandro Mendez</h3>
+                        <p>Gerente de Ventas</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/Sergiotraje.jpg" alt="Miembro del equipo">
+                        <h3>Sergio Tovar</h3>
+                        <p>Jefe de Taller</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/Danieltraje.jpg" alt="Miembro del equipo">
+                        <h3>Daniel Mendez</h3>
+                        <p>Líder de Mantenimiento</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/Brandontraje.jpg" alt="Miembro del equipo">
+                        <h3>Brandon Ramírez</h3>
+                        <p>Coordinador de envíos</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer reutilizado -->
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
