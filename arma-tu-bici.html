@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arma tu Bici - Bicicletas Bogotá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            <ul class="menu" id="menu">
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="dropdown">
+                        <li><a href="bicicletas.html">Bicicletas</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="repuestos.html">Repuestos</a></li>
+                        <li><a href="indumentaria.html">Indumentaria</a></li>
+                        <li><a href="herramientas.html">Herramientas</a></li>
+                        <li><a href="todas-categorias.html">Todas las Categorías</a></li>
+                    </ul>
+                </li>
+                <li><a href="arma-tu-bici.html">Arma tu Bici</a></li>
+                <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="heading-1">Arma tu Bici</h1>
+        <p>Personaliza tu bicicleta eligiendo entre una variedad de componentes. Visualiza cómo se verá tu bici personalizada.</p>
+
+        <div class="bike-builder">
+            <div class="bike-preview">
+                <img id="bikeImage" src="images/MarcoBicicletaRuta.jpg" alt="Vista previa de tu bicicleta" />
+            </div>
+
+            <div class="bike-options">
+                <h2>Componentes de tu bicicleta</h2>
+                
+                <!-- Selección del Marco -->
+                <div class="option">
+                    <label for="frame">Selecciona el marco:</label>
+                    <select id="frame" name="frame">
+                        <option value="default" data-img="images/BicicletaStandar.jpg">Estándar</option>
+                        <option value="mountain" data-img="images/MontañaArma.jpg">Marco de Montaña</option>
+                        <option value="road" data-img="images/RutaArma.jpg">Marco de Ruta</option>
+                    </select>
+                </div>
+
+                <!-- Selección de las ruedas -->
+                <div class="option">
+                    <label for="wheels">Selecciona las ruedas:</label>
+                    <select id="wheels" name="wheels">
+                        <option value="default" data-img="images/default-bike.png">Ruedas estándar</option>
+                        <option value="sport" data-img="images/sport-wheels.png">Ruedas Deportivas</option>
+                        <option value="city" data-img="images/city-wheels.png">Ruedas Urbanas</option>
+                    </select>
+                </div>
+
+                <!-- Selección del manillar -->
+                <div class="option">
+                    <label for="handlebar">Selecciona el manillar:</label>
+                    <select id="handlebar" name="handlebar">
+                        <option value="default" data-img="images/default-bike.png">Manillar Estándar</option>
+                        <option value="aero" data-img="images/aero-handlebar.png">Manillar Aero</option>
+                        <option value="touring" data-img="images/touring-handlebar.png">Manillar de Turismo</option>
+                    </select>
+                </div>
+
+                <!-- Botón de finalizar -->
+                <button id="buildBikeBtn" class="btn-primary">Finalizar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer reutilizado -->
+    </footer>
+
+    <script>
+        // Función para cambiar la imagen de la bici según las selecciones
+        document.querySelectorAll('select').forEach(select => {
+            select.addEventListener('change', updateBikeImage);
+        });
+
+        function updateBikeImage() {
+            const frame = document.getElementById('frame');
+            const wheels = document.getElementById('wheels');
+            const handlebar = document.getElementById('handlebar');
+
+            // Aquí se maneja la lógica para combinar las diferentes imágenes según los componentes seleccionados
+            // Por simplicidad, solo cambiaremos la imagen del cuadro
+            const selectedFrame = frame.options[frame.selectedIndex].getAttribute('data-img');
+            document.getElementById('bikeImage').src = selectedFrame;
+        }
+    </script>
+</body>
+</html>

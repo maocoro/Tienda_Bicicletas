@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletas - Bicicletas Bogotá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            <ul class="menu" id="menu">
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="dropdown">
+                        <li><a href="bicicletas.html">Bicicletas</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="repuestos.html">Repuestos</a></li>
+                        <li><a href="indumentaria.html">Indumentaria</a></li>
+                        <li><a href="herramientas.html">Herramientas</a></li>
+                        <li><a href="todas-categorias.html">Todas las Categorías</a></li>
+                    </ul>
+                </li>
+                <li><a href="arma-tu-bici.html">Arma tu Bici</a></li>
+                <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="heading-1">Nuestras Bicicletas</h1>
+        <p>Descubre nuestra variedad de bicicletas de montaña, urbanas, y de ruta.</p>
+
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <img src="images/MoanañaBici.jpg" alt="Bicicleta de Montaña">
+                <h3>Bicicleta de Montaña</h3>
+                <p class="price">$2,500,000</p>
+                <button class="btn-primary">Ver Detalles</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <img src="images/UrbanaBici.jpg" alt="Bicicleta Urbana">
+                <h3>Bicicleta Urbana</h3>
+                <p class="price">$1,200,000</p>
+                <button class="btn-primary">Ver Detalles</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <img src="images/RutaBici.jpg" alt="Bicicleta de Ruta">
+                <h3>Bicicleta de Ruta</h3>
+                <p class="price">$3,000,000</p>
+                <button class="btn-primary">Ver Detalles</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card">
+                <img src="images/HibridaBici.jpg" alt="Bicicleta Híbrida">
+                <h3>Bicicleta Híbrida</h3>
+                <p class="price">$2,800,000</p>
+                <button class="btn-primary">Ver Detalles</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer reutilizado -->
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
